@@ -1,0 +1,651 @@
+/*Общие стили*/
+html,body{
+    padding:0;
+    margin:0;
+}
+body{
+    font-size:16px;
+    font-family: 'Cuprum', sans-serif;
+}
+.center-wrapper{
+    width:58.75em; /*940px / 16px */
+    padding:0 0.625em;/*10px / 16px */
+    margin:0 auto;
+}
+.clearfix:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/*Стили header*/
+
+.header{
+    height:2.625em; /*42px / 16px */
+    color:white;
+    background-color:#293449;
+}
+h1{
+    text-transform:uppercase;
+    box-shadow:0 5px 0 0 #b52933;
+    padding:0;
+    margin:0;
+}
+h1 a{
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    background-color:#ee3643;
+    vertical-align:middle;
+    display:block;
+}
+.header h1{
+    font-size:1.5em; /*24px / 16px*/
+    width:9.16em; /*220px / 24px */
+    height:1.75em; /*42px / 24px */
+    line-height:1.75em; /*42px / 24px */
+    margin-right:0.91em; /*22px / 24px*/
+    float:left;
+}
+.top-menu li{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.top-menu li{
+    margin-left:-0.25em; /*4px / 16px */
+}
+
+.top-menu{
+    font-size:1.06em; /*17px / 16px*/
+    list-style:none;
+    float:right;
+    margin:0;
+    padding:0;
+}
+.top-menu a{
+    width:8.82em; /*150px / 17px */
+    height:42px; /*42px / 17px */
+    line-height:42px;
+    color:white;
+    text-decoration:none;
+    text-align: center;
+    display: block;
+}
+.top-menu .bookmark {
+    margin-right:0.53em; /*10px / 17px*/
+}
+.search {
+    width:14.41em; /*245px / 17px*/
+}
+.search input{
+    color:white;
+    background:#293449;
+    border:none;
+    border-left:2px solid #434d5f;
+    padding-left:0.53em; /*9px / 17px*/
+    margin-left:0.53em; /*9px / 17px*/
+}
+.top-menu .ordering{
+    background:#63a63e;
+}
+.ordering:hover{
+    background:#6fc441;
+}
+.inner:hover{
+    background-color:#212a3a;
+}
+.inner:hover .icon{
+    opacity:1;
+}
+.icon{
+    width:1em;
+    height:1em;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:0.588em; /*10px / 17px*/
+    background:url('../img/header-icon.png') no-repeat 0 0;
+}
+.icon-book{
+    background-position: 0 -69px;
+    opacity:.2;
+}
+.icon-basket{
+    background-position: 0 -36px;
+    opacity:.2;
+}
+.top-menu .basket{
+	background-color:#ee3643;
+}
+.top-menu .basket:hover{
+	background-color:#b72f38
+}
+
+
+/*Стили account-space*/
+
+.nav{
+	background:#f2f6f8;
+	padding-bottom:0.05em;  /*1px / 16px*/
+}
+.nav-info-block{
+	float:left;
+	margin:2.81em 0; /*45px / 16px*/
+}
+.intro{
+	font-size:1em; /*16px / 16px*/
+	line-height:1.43em; /*23px / 16px*/
+	color:red;
+	padding-right:4.687em;/*75px / 16px*/
+	padding-left:3.125em; /*50px / 16px*/
+}
+.phone{
+	font-size:1.31em; /*21px / 16px*/
+	color:red;
+	border:0.142em solid white; /*3px / 21px*/
+	padding:0.33em 0.91em; /*7px / 21px*/ /*20px / 21px*/
+	margin-bottom:0.47em; /*10px / 21px*/
+}
+.icon-phone{
+	background-position: 0 -103px;
+}
+.adress-top{
+	text-align:center;
+}
+.adress-top a{
+	color:#32425c;
+	text-decoration:none;
+}
+.account-block{
+	float:right;
+}
+.account{
+	font-size:1.31em; /*21px / 16px*/
+	background:white;
+	padding:0.47em 0.66em; /*10px / 21px*/ /*14px / 21px*/
+	margin-bottom:0.38em; /*8px / 21px*/
+}
+.account a{
+	color:black;
+	text-decoration:none;
+}
+.personal-iss a{
+	color:#32425c;
+	padding:0 1.125em; /*18px / 16px*/
+}
+.personal-iss span{
+	display:inline-block;
+	vertical-align:middle;
+	width:0.25em; /*4px / 16px*/
+	height:0.25em; /*4px / 16px*/
+	border-radius:50%;
+	background:#32425c;
+}
+.icon-prof{
+	background-position: 0 -139px;
+}
+.icon-log{
+	background-position: 0 -175px;
+	opacity:.2;
+	margin-left:1.42em; /*30px / 21px*/
+	margin-right:0;
+}
+.icon-log:hover{
+	opacity:1;
+}
+
+/* Стили nav-menu*/
+
+.nav-elements{
+	font-size:1.06em; /*17px / 16px*/
+	background:#32425c;
+	list-style:none;
+	margin:0;
+	padding:0;
+	margin-bottom:3.52em; /*60px / 17px*/
+}
+.nav-elements li{
+	display:inline-block;
+	margin-right:-0.2em;
+}
+.nav-elements li a{
+	color:white;
+	text-decoration:none;
+	display:block;
+	padding:1.17em 1.765em; /*20px / 17px*/ /*30px / 17px*/
+}
+.nav-elements li:first-child a{
+	padding-left:2.94em; /*50px / 17px*/
+}
+.nav-elements li:last-child a{
+	padding-right:3.53em; /*60px / 17px*/
+}
+.nav-elements li a:hover{
+	background:#293449;
+}
+
+/*Стили main-content*/
+.main-content{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.breadcrumb{
+	font-size:0.75em; /*12px / 16px*/
+	text-transform:uppercase;
+	padding:1.25em 0; /*20px / 12px*/
+}
+.breadcrumb a{
+	color:black;
+	padding-right:22px;
+	text-decoration:none;
+	margin-left:17px;
+	position:relative;
+}
+.breadcrumb a:first-child{
+	margin-left:0;
+}
+.breadcrumb a:after{
+	content:'';
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url('../img/icon-next.png') no-repeat 10px 0;
+	position:absolute;
+	right:0;
+	top:5px;
+}
+.breadcrumb span{
+	margin-left:17px;
+}
+.big-title{
+	font-size:30px;
+	padding:28px 30px;
+	color:#32425c;
+	text-transform:uppercase;
+	background:#f2f6f8;
+	
+}
+.select-block{
+	margin-top:20px;
+}
+.filter{
+	width:220px;
+	text-transform:uppercase;
+	float:left;
+	
+}
+.sorting-block{
+	text-transform:uppercase;
+	background:#f7f3ec;
+	padding:10px 20px;
+}
+.price-reg{
+	padding-bottom:1px;
+	border-bottom:1px solid #e5e5e5;
+}
+.sort-title{
+	font-weight:bold;
+	padding:18px 0;
+	position:relative;
+}
+.sort-title:after{
+	content:'';
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url('../img/icon-up.png') no-repeat 0 0;
+	position:absolute;
+	right:20px;
+	top:25px;
+}
+.range-filter{
+    width:220px;
+    margin-bottom:20px;
+}
+.range-controls{
+    position:relative;
+    height:80px;
+    margin-bottom:15px;
+    padding:0 30px;
+    background:#f1f1f1;
+    border-radius:5px;
+    overflow:hidden;
+}
+.range-controls .scale{
+    margin-top:39px;
+    height:2px;
+    background:#d7dcde;
+}
+.range-controls .bar{
+    height:2px;
+    background:#00ca74;
+}
+.range-controls .toggle{
+    position:absolute;
+    top:30px;
+    left:30px;
+    width:4px;
+    height:4px;
+    border:8px solid white;
+    background:#ababab;
+    cursor:pointer;
+    border-radius:50%;
+    box-shadow:0 2px 1px 0 #cfcfcf;
+}
+.range-controls .min-toggle{
+    left:15px;
+}
+.range-controls .max-toggle{
+    left:115px;
+}
+.price-controls input{
+    width:70px;
+    padding:8px 10px;
+    border:none;
+    background:#f1f1f1;
+    font-size:16px;
+    font-weight:300;
+    font-style:normal;
+    text-align:center;
+    color:#283136;
+    border-radius:5px;
+}
+.price-controls .min-price{
+    margin-right:35px;
+}
+.price-controls{
+    white-space:nowrap;
+}
+.producer-select{
+	border-bottom:1px solid #e5e5e5;
+}
+.filter ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.filter ul li{
+	margin-bottom:10px;
+}
+.filter ul li:last-child{
+	margin-bottom:20px;
+}
+.items-catalog{
+	width:700px;
+	float:right;
+}
+.page-nbr{
+	font-size:12px;
+	color:black;
+	text-decoration:none;
+	border:1px solid #e5e5e5;
+	border-radius:5px;
+	display:inline-block;
+	padding:10px 15px;
+	margin-bottom:60px;
+	margin-right:10px;
+}
+.page-nbr:hover{
+	background:#e5e5e5;
+}
+.page-nbr:first-of-type{
+	background:#ee3643;
+	border-color:#ee3643;
+}
+.page-nbr:first-of-type:hover{
+	background:#b52933;
+	}
+.page-next{
+	padding:10px 30px;
+}
+/*Стили catalog*/
+
+.sorting-block span{
+	margin-right:70px;
+	cursor:pointer;
+}
+.sorting-block span:last-child{
+	margin-right:0;
+}
+.sorting-block span:nth-child(2):after{
+	content:'';
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url('../img/icon-down.png') no-repeat 5px 5px;
+}
+.popular-list{
+	margin:1.25em 0; /*20px / 16px*/
+	padding:0;
+}
+.popular-list li{
+	width:13.75em; /*220px / 16px*/
+	display:inline-block;
+	margin-right:0.97em; /*20px / 16px*/
+	margin-bottom:20px;
+}
+.popular-list li:nth-child(3n){
+	margin-right:0;
+}
+.popular-list li:hover{
+	box-shadow:0 0.625em  1.56em 0 rgba(41,52,73,.5); /*25px / 16px*/  /*10px / 16px*/
+}
+.product-list li{
+	font-family: 'Open Sans', sans-serif;
+	font-size:1em; /*16px / 16px*/
+	text-align:center;
+	width:13.625em; /*218px / 16px*/
+	border:1px solid #e5e5e5;
+	position:relative;
+}
+.product-item{
+	padding:0 1.56em; /*25px / 16px*/
+	font-weight:bold;
+}
+.item-name,
+.old-price{
+	min-height:2.5em; /*40px / 16px*/
+}
+.old-price{
+	color:#999999;
+	text-decoration:line-through;
+}
+.price-btn{
+	width:8.75em; /*140px / 16px*/
+	color:white;
+	vertical-align:middle;
+	background:#ee3643;
+	border-radius:3px;
+	text-decoration:none;
+	display:inline-block;
+	padding:0.625em 0; /*10px / 16px*/
+	margin-bottom:1.25em; /*20px / 16px*/
+	position:relative;
+}
+.price-btn:after{
+	content:'';
+	width:0;
+	height:0;
+	border:1.4em solid white; /*21px / 16px*/
+	top:0;
+	right:-1.25em; /*20px / 16px*/
+	border-left-color:transparent;
+	position:absolute;
+}
+.new-logo{
+	position:absolute;
+	right:-1px;
+	top:-1px;
+	z-index:20;
+}
+.hover-block{
+	font-size:0.875em;  /*14px / 16px*/
+	width:15.57em; /*218px / 14px*/
+	height:10.71em;  /*150px / 14px*/
+	background-color:rgba(255,255,255,0.9);
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:10;
+}
+.hover-block a{
+	width:9.21em; /*129px / 14px*/
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	border:3px solid #63a63e;
+	border-radius:3px;
+	display:inline-block;
+	padding:0.71em 0; /*10px / 14px*/
+}
+.buy-btn{
+	color:white;
+	background-color:#63a63e;
+	margin-top:3.21em; /*45px / 14px*/
+	margin-bottom:0.71em; /*10px / 14px*/
+	box-shadow:0 3px 0 0 #367315;
+	position:relative;
+}
+.buy-btn:before{
+	content:'';
+	display:inline-block;
+	width:18px;
+	height:18px;
+	background:url('../img/header-icon.png') no-repeat 0 -34px;
+	opacity:.4;
+	position:absolute;
+	left:13px;
+}
+.buy-btn:hover{
+	background-color:#367315;
+	border-color:#367315;
+}
+.bookmark-btn{
+	color:#32425c;
+	background:white;
+}
+.bookmark-btn:hover{
+	border-color:#367315;
+}
+.product-list li:hover .hover-block{
+	display:block;
+}
+
+/*Стили about*/
+.about{
+	background:#f2f6f8;
+	padding:60px 0;
+}
+.about h2{
+	font-family: 'Cuprum', sans-serif;
+	margin:0;
+	margin-bottom:30px;
+}
+.about p{
+	font-size:12px;
+}
+
+/*Стили bottom-nav*/
+
+.bottom-nav{
+	color:white;
+	background:#32425c;
+}
+.bottom-contacts{
+	float:left;
+}
+.bottom-contacts h1 a{
+	font-size:1.25em; /*30px / 24px*/
+	padding:0.46em 1.13em;  /*14px / 30px*/  /*34px / 30px*/
+}
+.bottom-contacts p{
+	font-size:1.125em; /*18px / 16px*/
+	color:#f1f5f7;
+	margin-top:1.94em; /*35px / 18px*/
+	margin-bottom:2.77em; /*50px / 18px*/
+}
+.bottom-nav-list{
+	font-size:1.125em; /*18px / 16px*/
+	width:30.55em;/*34.44em; /*550px / 18px*/
+	list-style:none;
+	text-align:right;
+	float:right;
+	padding:0;
+	margin:0;
+	margin-top:2.22em; /*40px / 18px*/
+}
+.bottom-nav-list li{
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:2.9em; /*50px / 18px*/
+	margin-bottom:2.22em; /*40px / 18px*/ 
+}
+.bottom-nav-list li:nth-child(8){
+	margin-right:1.5em; /*30px / 18px*/
+}
+.bottom-nav-list li:nth-child(5),
+.bottom-nav-list li:nth-child(10){
+	margin-right:0;
+}
+.bottom-nav-list a{
+	color:#f1f5f7;
+	text-decoration:none;
+}
+
+.bottom-nav-list li:nth-child(n+6) a{
+	color:#ffd180;
+}
+.bottom-nav-list li:empty{
+	width:0.22em; /*4px / 18px*/
+	height:0.22em; /*4px / 18px*/
+	vertical-align:middle;
+	background:white;
+	border-radius:50%;
+	margin-right:1.5em; /*30px / 18px*/
+}
+.footer{
+	color:white;
+	background:#293449; 
+}
+.copyright,
+.social-btn-block,
+.feedback
+{
+	float:left;
+}
+.design{
+	float:right;
+}
+.copyright,
+.social-btn-block,
+.feedback,
+.design{
+	font-size:1em; /*16px / 16px*/
+	margin:2.18em auto; /*35px / 16px*/
+}
+.copyright{
+	margin-right:10em; /*160px / 16px*/ 
+}
+.social-btn-block{
+	margin-right:6.56em; /*105px / 16px*/ 
+}
+.social-btn{
+	width:2.62em; /*42px / 16px*/ 
+	height:2.62em; /*42px / 16px*/
+	display:inline-block;
+	vertical-align:middle;
+	border:1px solid #212a3a;
+	border-radius:50%;
+	background:#212a3a url('../img/social-btn.png') no-repeat 60% 50%;
+}
+.social-btn-vk{
+	background-position: 1em 0.9em;
+}
+.social-btn-inst{
+	background-position: 50% -3.65em;
+}
+.color-yellow{
+	color:#ffd180;
+	text-decoration:none;
+}
